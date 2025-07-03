@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Archiver Download Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .card img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        margin-bottom: 15px;
+      }
+
+      .card p {
+        margin-bottom: 15px;
+        font-size: 1rem;
+      }
+
+      .card a button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .card a button:hover {
+        background-color: #45a049;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          font-size: 1.2rem;
+        }
+
+        .card img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>File Archiver Download Page (Demo)s</h1>
+    </header>
+
+    <div style="text-align: center; padding: 20px;">
+    <input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Search for a file archiver..." style="width: 80%; max-width: 400px; padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://img.icons8.com/ios-filled/100/000000/zip.png"
+          alt="Simple Zip"
+        />
+        <p>Download the Simple Zip File</p>
+        <a
+          href="https://toolsfairy.com/archive-test/sample-zip-files#"
+          download
+        >
+          <button>Download</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://tse1.mm.bing.net/th/id/OIP.BeqRkADFw9VRHMLPfvNjlAHaHa?cb=thvnextc1&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="WinRAR"
+        />
+        <p>Download WinRAR</p>
+        <a href="https://www.rarlab.com/download.htm" download>
+          <button>Download</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="https://www.7-zip.org/favicon.ico" alt="7-Zip" />
+        <p>Download 7-Zip</p>
+        <a href="https://www.7-zip.org/" download>
+          <button>Download</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="https://peazip.github.io/favicon.ico" alt="PeaZip" />
+        <p>Download PeaZip</p>
+        <a href="https://peazip.github.io/" download>
+          <button>Download</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="https://www.bandisoft.com/favicon.ico" alt="Bandizip" />
+        <p>Download Bandizip</p>
+        <a href="https://www.bandisoft.com/bandizip/" download>
+          <button>Download</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="https://www.zipware.org/favicon.ico" alt="Zipware" />
+        <p>Download Zipware</p>
+        <a href="https://www.zipware.org/" download>
+          <button>Download</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="https://www.winzip.com/favicon.ico" alt="WinZip" />
+        <p>Download WinZip</p>
+        <a href="https://www.winzip.com/en/download/winzip/" download>
+          <button>Download</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="https://www.extractnow.com/favicon.ico" alt="ExtractNow" />
+        <p>Download ExtractNow</p>
+        <a href="https://www.extractnow.com/" download>
+          <button>Download</button>
+        </a>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.techspot.com/images2/downloads/topdownload/2014/06/b1.png"
+          alt="B1 Free Archiver"
+        />
+        <p>Download B1 Free Archiver</p>
+        <a href="https://b1.org/" download>
+          <button>Download</button>
+        </a>
+      </div>
+      <div class="card">
+        <img
+          src="https://filenp.com/images/software/512/powerarchiver.png"
+          alt="Power Archiver"
+        />
+        <p>Download PowerArchiver</p>
+        <a href="https://www.powerarchiver.com/" download>
+          <button>Download</button>
+        </a>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.sftcdn.net/images/t_app-icon-l/p/e6e96f84-96d5-11e6-9619-00163ec9f5fa/3591371697/unzip-wizard-logo.png"
+          alt="FreeARC"
+        />
+        <p>Download FreeARC</p>
+        <a href="https://sourceforge.net/projects/freearc/" download>
+          <button>Download</button>
+        </a>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.techspot.com/images2/downloads/topdownload/2016/05/zipgenius-p.webp"
+          alt="RAR File Open Knife"
+        />
+        <p>Download Zip Genious</p>
+        <a
+          href="https://www.techspot.com/downloads/1207-zipgenius.html"
+          download
+        >
+          <button>Download</button>
+        </a>
+      </div>
+      <div class="card">
+        <img
+          src="https://cdn.theunarchiver.com/img/unarchiver@2x.png"
+          alt="The Unarchiver"
+        />
+        <p>Download The Unarchiver</p>
+        <a href="https://theunarchiver.com/" download>
+          <button>Download</button>
+        </a>
+      </div>
+      <div class="card">
+        <img src="https://www.keka.io/favicon.ico" alt="Keka" />
+        <p>Download Keka</p>
+        <a href="https://www.keka.io/" download>
+          <button>Download</button>
+        </a>
+      </div>
+      <div class="card">
+        <img
+          src="https://linuxiac.b-cdn.net/wp-content/uploads/2021/03/7zip.png"
+          alt="IZArc"
+        />
+        <p>Download p7zip</p>
+        <a href="https://sourceforge.net/projects/p7zip/" download>
+          <button>Download</button>
+        </a>
+      </div>
+        <div class="card">
+            <img
+            src="https://play-lh.googleusercontent.com/D1POO3HtYVgSW65yv3JLMrr8F7L9RcYUfEw_ug3BhMhMgN0b2fZ414cYkmSwVRr737aY=w480-h960-rw"
+            alt="RARLAB"
+            />
+            <p>Download ZArchiver</p>
+            <a href="https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver&hl=en-US&pli=1" download>
+            <button>Download</button>
+            </a>
+    </div>
+
+    <script>
+        function filterCards() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+    
+            cards.forEach(card => {
+            const text = card.textContent || card.innerText;
+            if (text.toLowerCase().indexOf(filter) > -1) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+            });
+        }
+    </script>
+  </body>
+</html>
